@@ -9,10 +9,14 @@ public class ProblemTester {
 		Multiplesof3and5 id1 = new Multiplesof3and5(); 
 		//Even Fibonacci Numbers ID2
 		EvenFibonacciNumbers id2 = new EvenFibonacciNumbers();
+		//Largest Prime Factor ID3
+		LargestPrimeFactor id3 = new LargestPrimeFactor();
 		
 	
 		displayProblemSection(id1);
 		displayProblemSection(id2);
+		displayProblemSection(id3);
+		
 		
 		
 		
