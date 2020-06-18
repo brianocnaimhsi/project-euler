@@ -11,11 +11,14 @@ public class ProblemTester {
 		EvenFibonacciNumbers id2 = new EvenFibonacciNumbers();
 		//Largest Prime Factor ID3
 		LargestPrimeFactor id3 = new LargestPrimeFactor();
+		//Largest Palindrome Product ID4
+		LargestPalindromeProduct id4 = new LargestPalindromeProduct();
 		
-	
+		//test the problems
 		displayProblemSection(id1);
 		displayProblemSection(id2);
 		displayProblemSection(id3);
+		displayProblemSection(id4);
 		
 		
 		
@@ -55,7 +58,13 @@ public class ProblemTester {
 		System.out.println("!----- End of Problem " + prob.getProbID() + " -----!");
 		//new line
 		System.out.println("");
-
+		
+		//the divider line
+		System.out.println("---------------------------------------------------------------------------------------------");
+		
+		//new line
+		System.out.println("");
+				
 		
 		
 		
