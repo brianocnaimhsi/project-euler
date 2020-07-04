@@ -1,33 +1,35 @@
 package tester;
 import archives.*;
+import java.util.ArrayList;
 
 public class ProblemTester {
-
+	
+	//The timing variables measures the length it takes for the problem to run
+	static long startTime; 
+	static long  endTime;
+	
 	public static void main(String[] args) {
 	
-		//Multiplesof3and5 ID1
-		Multiplesof3and5 id1 = new Multiplesof3and5(); 
-		//Even Fibonacci Numbers ID2
-		EvenFibonacciNumbers id2 = new EvenFibonacciNumbers();
-		//Largest Prime Factor ID3
-		LargestPrimeFactor id3 = new LargestPrimeFactor();
-		//Largest Palindrome Product ID4
-		LargestPalindromeProduct id4 = new LargestPalindromeProduct();
+		//Declare the array list of Problem Objects
+		ArrayList<Problem> problems = new ArrayList<Problem>();
 		
-		SmallestMultiple id5 = new SmallestMultiple();
+		//Add the Multiplesof3and5 ID1
+		problems.add(new Multiplesof3and5()); 
+		//Add Even Fibonacci Numbers ID2
+		problems.add(new EvenFibonacciNumbers());
+		//Add Largest Prime Factor ID3
+		problems.add(new LargestPrimeFactor());
+		//Add Largest Palindrome Product ID4
+		problems.add(new LargestPalindromeProduct());
+		//Add Smallest Multiple ID5
+		problems.add(new SmallestMultiple());
 		
-		//test the problems
-		displayProblemSection(id1);
-		displayProblemSection(id2);
-		displayProblemSection(id3);
-		displayProblemSection(id4);
-		displayProblemSection(id5);
+		//For-each through all problem objects
+		for(Problem prob : problems) {
+			//display the problem results
+			displayProblemSection(prob);
+		}
 		
-		
-		
-		
-
-
 	}
 	
 	
@@ -36,40 +38,31 @@ public class ProblemTester {
 	
 		//start of the section
 		System.out.println("!----- Start of Problem " + prob.getProbID() + " -----!");
-		
 		//new line
 		System.out.println("");
-		
 		//the ID of the problem
 		System.out.println("Id of Problem : " + prob.getProbID());
-		
-		//new line
-		System.out.println("");
-		
 		//the name of the problem
 		System.out.println("Name of Problem : " + prob.getName());
-		
-		//new line
-		System.out.println("");
-		
+		//End time 
+		startTime = System.nanoTime();
 		//the results of the problem
 		System.out.println("Result : " + prob.generateResults());
-		
+		//End time
+		long endTime = System.nanoTime();
+		//print the running time of the problem
+		System.out.println("Running Time : " + (endTime - startTime ) + " NanoSeconds");
+		//new line
 		System.out.println("");
-		
-		
+		//the end line
 		System.out.println("!----- End of Problem " + prob.getProbID() + " -----!");
 		//new line
 		System.out.println("");
-		
 		//the divider line
 		System.out.println("---------------------------------------------------------------------------------------------");
-		
 		//new line
 		System.out.println("");
-				
-		
-		
+
 		
 	}//end of display result
 
