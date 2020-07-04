@@ -14,11 +14,14 @@ public class ProblemTester {
 		//Largest Palindrome Product ID4
 		LargestPalindromeProduct id4 = new LargestPalindromeProduct();
 		
+		SmallestMultiple id5 = new SmallestMultiple();
+		
 		//test the problems
 		displayProblemSection(id1);
 		displayProblemSection(id2);
 		displayProblemSection(id3);
 		displayProblemSection(id4);
+		displayProblemSection(id5);
 		
 		
 		
