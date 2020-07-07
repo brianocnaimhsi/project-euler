@@ -23,6 +23,8 @@ public class ProblemTester {
 		problems.add(new LargestPalindromeProduct());
 		//Add Smallest Multiple ID5
 		problems.add(new SmallestMultiple());
+		//Add the Sum Square Difference
+		problems.add(new SumSquareDifference());
 		
 		//For-each through all problem objects
 		for(Problem prob : problems) {
