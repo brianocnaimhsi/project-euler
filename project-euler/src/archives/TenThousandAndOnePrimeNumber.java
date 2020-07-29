@@ -1,5 +1,20 @@
 package archives;
 
+/* 
+Version: 1.0
+Title: 10001st prime
+Des: A program that finds 10001st prime number. 
+Last Modified 7/29/2020
+Author: Brian O Cnaimhsi 
+GitHub: https://github.com/brianocnaimhsi
+Website https://www.linkwebbie.com/developers/brianocnaimhsi/
+Challenge Url: https://projecteuler.net/problem=7
+Copyright 2020, Brian O Cnaimhsi
+Licensed under The MIT License: http://www.opensource.org/licenses/mit-license
+Developer Note - A simple program that finds the 10001st prime number.*/
+
+
+
 public class TenThousandAndOnePrimeNumber extends Problem {
 
 	public String primeNumber(int numberOfPrimes) {
@@ -21,7 +36,8 @@ public class TenThousandAndOnePrimeNumber extends Problem {
 			}
 
 			counter++;
-
+		
+			
 		}
 
 		return String.valueOf(largestPrime);
