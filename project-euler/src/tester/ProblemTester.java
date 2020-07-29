@@ -25,6 +25,8 @@ public class ProblemTester {
 		problems.add(new SmallestMultiple());
 		//Add the Sum Square Difference
 		problems.add(new SumSquareDifference());
+		//Add the Sum Square Difference
+		problems.add(new TenThousandAndOnePrimeNumber());
 		
 		//For-each through all problem objects
 		for(Problem prob : problems) {
@@ -53,7 +55,7 @@ public class ProblemTester {
 		//End time
 		long endTime = System.nanoTime();
 		//print the running time of the problem
-		System.out.println("Running Time : " + (endTime - startTime ) + " NanoSeconds");
+		System.out.println("Running Time : " + (endTime - startTime )  + " NanoSeconds");
 		//new line
 		System.out.println("");
 		//the end line
